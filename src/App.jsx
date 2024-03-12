@@ -12,12 +12,12 @@ function App() {
 
 let lowestPriceIndex = null;
 let lowestPricePerSquareMeter = Infinity;
-let lowestPriceName = ""
+let lowestPriceName = "";
 
 options?.forEach((option, index) => {
   const totalArea = option.rolls * option.metersPerRoll;
   const pricePerSquareMeter = option.price / totalArea;
-  console.log(option);
+
   if (pricePerSquareMeter < lowestPricePerSquareMeter) {
     lowestPriceIndex = index;
     lowestPricePerSquareMeter = pricePerSquareMeter;
