@@ -32,7 +32,7 @@ const AddOptionForm = ({onAddOption}) => {
       </div>
       <div>
         <label>Precio ($):</label>
-        <input type="number" step="0.01" value={price} onChange={(e) => setPrice(e.target.value)} />
+        <input type="number" inputMode='numeric' value={price} onChange={(e) => setPrice(e.target.value)} />
       </div>
       <div>
         <label>Numero de rollos:</label>
@@ -40,7 +40,7 @@ const AddOptionForm = ({onAddOption}) => {
       </div>
       <div>
         <label>Metros por rollo:</label>
-        <input type="number" value={metersPerRoll} onChange={(e) => setMetersPerRoll(e.target.value)} />
+        <input type="number" inputMode='numeric' value={metersPerRoll} onChange={(e) => setMetersPerRoll(e.target.value)} />
       </div>
       <button type="submit">Agregar papel</button>
     </form>
