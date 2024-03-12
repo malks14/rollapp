@@ -36,7 +36,7 @@ const AddOptionForm = ({onAddOption}) => {
       </div>
       <div>
         <label>Numero de rollos:</label>
-        <input type="number" value={rolls} onChange={(e) => setRolls(e.target.value)} />
+        <input type="number" inputMode='numeric' value={rolls} onChange={(e) => setRolls(e.target.value)} />
       </div>
       <div>
         <label>Metros por rollo:</label>
